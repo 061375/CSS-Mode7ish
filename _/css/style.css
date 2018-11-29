@@ -1,0 +1,112 @@
+/* line 1, ../working/sass/style.scss */
+body, html {
+  overflow: hidden;
+  perspective-origin: 25% 75%;
+  background-color: blue; }
+
+/* line 6, ../working/sass/style.scss */
+ul {
+  list-style: none; }
+
+/* line 9, ../working/sass/style.scss */
+#target {
+  margin: auto;
+  background-color: green;
+  /*transform: perspective(400px) rotateX(85deg);*/
+  width: 1200px;
+  height: 1200px;
+  background-image: url(http://www.nesmaps.com/maps/Zelda2/ZeldaIIMapOverworld.png);
+  background-size: cover;
+  background-position: center;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  transform-style: preserve-3d;
+  position: relative;
+  /* comment for live */
+  transform: perspective(400px) rotateX(85deg) rotateZ(128deg);
+  /* uncomment for live */
+  /*animation-name: spin;*/ }
+
+/* line 30, ../working/sass/style.scss */
+#castle {
+  transform: rotateY(90deg);
+  position: absolute;
+  left: 70%;
+  top: 33%;
+  list-style: none;
+  transform-style: preserve-3d; }
+
+/* line 39, ../working/sass/style.scss */
+.bricks {
+  background-image: url(../../_/assets/images/brick1.png);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  position: absolute; }
+
+/* Rotate the walls */
+/* line 48, ../working/sass/style.scss */
+.wall2 .row1 {
+  transform-style: preserve-3d;
+  transform: rotateX(90deg); }
+
+/* line 58, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(5px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(15px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(5px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(15px) translateX(15px); }
+
+/* line 58, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(15px); }

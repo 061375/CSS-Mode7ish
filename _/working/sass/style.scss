@@ -1,0 +1,68 @@
+body, html {
+	overflow: hidden;
+	perspective-origin: 25% 75%;
+	background-color: blue;
+}
+ul {
+	list-style: none;
+}
+#target {
+	margin: auto;
+	background-color: green;
+	/*transform: perspective(400px) rotateX(85deg);*/
+	width: 1200px;
+	height: 1200px;
+	background-image: url(http://www.nesmaps.com/maps/Zelda2/ZeldaIIMapOverworld.png);
+	background-size: cover;
+	background-position: center;
+	
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	transform-style: preserve-3d;
+	position: relative;
+	
+	/* comment for live */
+	transform: perspective(400px) rotateX(85deg) rotateZ(128deg);
+	/* uncomment for live */
+	/*animation-name: spin;*/
+}
+#castle {
+    transform: rotateY(90deg);
+    position: absolute;
+    left: 70%;
+	top: 33%;
+    list-style: none;
+    transform-style: preserve-3d;
+}
+
+.bricks {
+	background-image: url(../../_/assets/images/brick1.png);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+/* Rotate the walls */
+.wall2 .row1 {
+	transform-style: preserve-3d;
+	transform: rotateX(90deg);
+}
+
+
+@mixin buildWall($wall, $row, $bricks, $zz: 0) {
+	$j: 0;
+	$z: $row * 15;
+	@for $i from 1 to $bricks {
+		.wall#{$wall} .row#{$row} .bricks:nth-child(#{$i}) {
+			left: 0;
+			top: 0;
+			transform: translateZ($zz + px) translateY($j + px) translateX($z + px);
+		}
+		$j: $j + 5; 
+	}
+}
+
+@include buildWall(1, 1, 6);
+@include buildWall(2, 1, 6, 16);
