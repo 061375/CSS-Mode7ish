@@ -9,6 +9,10 @@ ul {
   list-style: none; }
 
 /* line 9, ../working/sass/style.scss */
+.hide {
+  background: none !important; }
+
+/* line 12, ../working/sass/style.scss */
 #target {
   margin: auto;
   background-color: green;
@@ -24,89 +28,2576 @@ ul {
   transform-style: preserve-3d;
   position: relative;
   /* comment for live */
-  transform: perspective(400px) rotateX(85deg) rotateZ(128deg);
+  transform: perspective(400px) rotateX(85deg) rotateZ(0deg);
   /* uncomment for live */
-  /*animation-name: spin;*/ }
+  animation-name: spin; }
 
-/* line 30, ../working/sass/style.scss */
+/* line 33, ../working/sass/style.scss */
 #castle {
-  transform: rotateY(90deg);
+  transform: translateZ(-19px) rotateY(90deg);
   position: absolute;
-  left: 70%;
-  top: 33%;
+    /*left: 70%;
+	top: 33%;*/
+  left: 51%;
+  top: 73%;
   list-style: none;
   transform-style: preserve-3d; }
 
-/* line 39, ../working/sass/style.scss */
+/* line 44, ../working/sass/style.scss */
 .bricks {
+  transform-style: preserve-3d;
   background-image: url(../../_/assets/images/brick1.png);
   background-size: cover;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   position: absolute; }
+  /* line 51, ../working/sass/style.scss */
+  .bricks.window {
+    background-image: url(../../_/assets/images/window.png) !important; }
 
 /* Rotate the walls */
-/* line 48, ../working/sass/style.scss */
-.wall2 .row1 {
+/* line 57, ../working/sass/style.scss */
+.wall2 .row {
   transform-style: preserve-3d;
   transform: rotateX(90deg); }
 
-/* line 58, ../working/sass/style.scss */
+/* Rotate the walls */
+/* line 62, ../working/sass/style.scss */
+.wall3 .row {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg); }
+
+/* Rotate the walls */
+/* line 67, ../working/sass/style.scss */
+.wall4 .row {
+  transform-style: preserve-3d;
+  transform: rotateX(90deg); }
+
+@keyframes spin {
+  from {
+    transform: perspective(400px) rotateX(85deg) rotateZ(0deg); }
+  to {
+    transform: perspective(400px) rotateX(85deg) rotateZ(360deg); } }
+/* Wall 1 */
+/* line 85, ../working/sass/style.scss */
 .wall1 .row1 .bricks:nth-child(1) {
   left: 0;
   top: 0;
-  transform: translateZ(0px) translateY(0px) translateX(15px); }
+  transform: translateZ(0px) translateY(0px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall1 .row1 .bricks:nth-child(2) {
   left: 0;
   top: 0;
-  transform: translateZ(0px) translateY(5px) translateX(15px); }
+  transform: translateZ(0px) translateY(2px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall1 .row1 .bricks:nth-child(3) {
   left: 0;
   top: 0;
-  transform: translateZ(0px) translateY(10px) translateX(15px); }
+  transform: translateZ(0px) translateY(4px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall1 .row1 .bricks:nth-child(4) {
   left: 0;
   top: 0;
-  transform: translateZ(0px) translateY(15px) translateX(15px); }
+  transform: translateZ(0px) translateY(6px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall1 .row1 .bricks:nth-child(5) {
   left: 0;
   top: 0;
-  transform: translateZ(0px) translateY(20px) translateX(15px); }
+  transform: translateZ(0px) translateY(8px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row1 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row2 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row3 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row4 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row5 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row6 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(0px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(2px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(4px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(6px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(8px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(10px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(12px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(14px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(16px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(18px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(20px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(22px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(24px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(26px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall1 .row7 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(0px) translateY(28px) translateX(-14px); }
+
+/* Wall 2 */
+/* line 85, ../working/sass/style.scss */
 .wall2 .row1 .bricks:nth-child(1) {
   left: 0;
   top: 0;
-  transform: translateZ(16px) translateY(0px) translateX(15px); }
+  transform: translateZ(16px) translateY(0px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall2 .row1 .bricks:nth-child(2) {
   left: 0;
   top: 0;
-  transform: translateZ(16px) translateY(5px) translateX(15px); }
+  transform: translateZ(16px) translateY(2px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall2 .row1 .bricks:nth-child(3) {
   left: 0;
   top: 0;
-  transform: translateZ(16px) translateY(10px) translateX(15px); }
+  transform: translateZ(16px) translateY(4px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall2 .row1 .bricks:nth-child(4) {
   left: 0;
   top: 0;
-  transform: translateZ(16px) translateY(15px) translateX(15px); }
+  transform: translateZ(16px) translateY(6px) translateX(-2px); }
 
-/* line 58, ../working/sass/style.scss */
+/* line 85, ../working/sass/style.scss */
 .wall2 .row1 .bricks:nth-child(5) {
   left: 0;
   top: 0;
-  transform: translateZ(16px) translateY(20px) translateX(15px); }
+  transform: translateZ(16px) translateY(8px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row1 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row2 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row3 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row4 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row5 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row6 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(0px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(2px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(4px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(6px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(8px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(10px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(12px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(14px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(16px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(18px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(20px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(22px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(24px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(26px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall2 .row7 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(16px) translateY(28px) translateX(-14px); }
+
+/* Wall 3 */
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row1 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row2 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row3 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row4 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row5 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row6 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-16px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-14px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-12px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-10px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-8px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-6px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-4px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(-2px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(0px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(2px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(4px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(6px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(8px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(10px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall3 .row7 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(30.5px) translateY(12px) translateX(-14px); }
+
+/* Wall 4 */
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row1 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-2px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row2 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-4px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row3 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-6px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row4 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-8px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row5 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-10px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row6 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-12px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(1) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(0px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(2px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(3) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(4px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(4) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(6px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(5) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(8px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(6) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(10px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(7) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(12px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(8) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(14px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(9) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(16px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(10) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(18px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(11) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(20px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(12) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(22px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(13) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(24px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(14) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(26px) translateX(-14px); }
+
+/* line 85, ../working/sass/style.scss */
+.wall4 .row7 .bricks:nth-child(15) {
+  left: 0;
+  top: 0;
+  transform: translateZ(-13px) translateY(28px) translateX(-14px); }
